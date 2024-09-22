@@ -70,3 +70,11 @@ def monthly_pay(parsed_bills):
         if event.e_type == 'payday':
             pay+=event.due
     return pay
+
+
+# Determines how much money I can save per day.
+# Determines how much money I can save per month.
+# Determines how much money I can save per year.
+def determine_savings(parsed_bills, amount_time):
+    pass     
+
