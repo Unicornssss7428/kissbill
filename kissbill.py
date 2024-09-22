@@ -70,8 +70,3 @@ def monthly_pay(parsed_bills):
         if event.e_type == 'payday':
             pay+=event.due
     return pay
-
-bills_dict = get_bills("bills.toml")
-parsed_bills = parse_bills(bills_dict)
-can_save = -1*(monthly_pay(parsed_bills) - if_i_spend(parsed_bills, 0))
-save_for_emergency_fun(parsed_bills, can_save)
