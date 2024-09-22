@@ -26,19 +26,21 @@ def parse_bills(bills_dict):
       return bills
 
 # Calculate total bills for day/week/month.
-def total_bills(parsed_bills, start, end):
+def total_bills(parsed_bills, start=1, end=31):
     total_bills = 0
     for event in parsed_bills:
-        if "Payday" not in event and event.due >= start and event.due <= end:
+        if event.e_type != 'payday' and event.due >= start and event.due <= end:
             total_bills += event.amount
     return total_bills
 
 # Calculate total pay for day/week/month
-def total_pay(parsed_bills, start, end):
+def total_pay(parsed_bills, start=1, end=31):
     total_pay = 0
     for event in parsed_bills:
-        if "Payday" in event and event.due >= start and event.due <= end:
-            total_pay += 0
+        if event.e_type == 'payday' and event.due >= start and event.due <= end:
+            total_pay += event.amount 
+    return total_pay
+
 # How much can I spend each day/week/month and still pay for expenses/save for emergency fund, car, etc.
 def total_spending_power(parsed_bills, funds, option):
     pass
@@ -54,3 +56,6 @@ def if_spend(parsed_bills, funds, due):
 # Display a "calendar" that tells me how much money I can spend on each day of the month while still being able to pay for my expenses and funds.
 def calendar(parsed_bills, funds):
     pass
+
+
+
