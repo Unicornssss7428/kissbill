@@ -1,4 +1,6 @@
-![Kissbill Logo](https://github.com/Unicornssss7428/kissbill/blob/main/images/kissbill.png?raw=true)
+<p align='center'>
+  <img src=https://github.com/Unicornssss7428/kissbill/blob/main/images/kissbill.png title='Kissbill Logo'>
+</p>
 Kissbill is a bills tracking/budgeting app that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.
 
 #Usage:
