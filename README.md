@@ -5,7 +5,7 @@
 <p align='center'>Kissbill is a bills tracking/budgeting app written in Python that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.</p>
 
 
-# Usage:
+# Usage
 
 Create a .toml file that houses all of your bills and paydays with their due dates and amounts.
 - Electricty
