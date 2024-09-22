@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src=https://github.com/Unicornssss7428/kissbill/blob/main/images/kiss_bill.png title='Kissbill Logo' width='200' height='200'>
+  <img src=https://github.com/Unicornssss7428/kissbill/blob/main/images/kiss_bill.png title='Kissbill Logo' width='300' height='300'>
 </p>
 <h3 align='center'>Kissbill</h3>
 <p align='center'>Kissbill is a bills tracking/budgeting app that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.</p>
