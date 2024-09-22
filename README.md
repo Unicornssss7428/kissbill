@@ -51,5 +51,7 @@ I don't expect to ever make this into a full-fledged budgeting application that 
 - Ability to calculate how much money I need to save per day/week/month/year to reach a certain goal, i.e. emergency fund.
 - Ability to display a calendar that shows me how much working cash (how much cash I can spend on that day and still meet goals/pay for expenses.) I have each day.
 - Ability to calculate how much a certain financial decision affects your ability to save for goals/pay for expenses.
+- Ability to calculate total bills for day/week/month/year.
+- Ability to calculate total pay for day/week/month/year.
 - Eventual port/overhaul to Rust
 
