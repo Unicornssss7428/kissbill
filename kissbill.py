@@ -4,10 +4,12 @@ class MoneyEvent:
         self.due = due
         self.amount = amount
         self.e_type = e_type
-
+# Balance is for 1 month, duration is the amount of months.
+# i.e. for an emergency fund I need 1759 a month, my emergency fund should last me 6 months so I need 1759*6 cash in the fund.
 class Fund:
-    def __init__(self, balance):
-        self.balance = balance
+    def __init__(self, balance, duration=6):
+        self.duration = duration
+        self.balance = balance*6
 
 def total_funds(funds):
     total_funds = 0
@@ -46,16 +48,15 @@ def total_pay(parsed_bills, start=1, end=31):
             total_pay += event.amount 
     return total_pay
 
-# Calculate how much I need to save per day/week/month to pay for expenes and reach funds goals.
+# Calculate how much I need to save per day/week/month to pay for expenses and reach funds goals.
 def total_need_saved(parsed_bills, funds, option='m'):
    bills_total = total_bills(parsed_bills) 
    funds_total = total_funds(funds)
    total_expenses = bills_total + funds_total
-   # Over 31 days, how much money does it take to make total_expenses?
-   # 31x = total_expenses
-   # x = total_expenses / 31
-   return total_expenses / 31
-   
+    
+   # Total expenses 
+   return total_expenses
+
 def total_can_save(parsed_bills):
     bills_total = total_bills(parsed_bills)
     pay_total = total_pay(parsed_bills)
@@ -67,10 +68,16 @@ def total_spending_power(parsed_bills, funds, option='m'):
     funds_total = total_funds(funds)
     total_expenses = bills_total + funds_total
     
-
 # Calculate how much a certain financial decision on a certain date (due) effects ability to pay for expenses and save for funds.
 def if_spend(parsed_bills, funds, due):
     pass
+
+
+def emergency_fund_savings(parsed_bills, funds):
+    need_total_saved = total_need_saved(parsed_bills, funds)
+    can_total_save = total_can_save(parsed_bills)
+
+    return need_total_saved / can_total_save
 
 # Display a "calendar" that tells me how much money I can spend on each day of the month while still being able to pay for my expenses and funds.
 def calendar(parsed_bills, funds):
