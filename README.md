@@ -8,9 +8,10 @@
 # Usage:
 
 Create a .toml file that houses all of your bills and paydays with their due dates and amounts.
-Payday1
-Payday2
-PaydayBirthday
+- Electricty
+- Payday1
+ -Payday2
+- PaydayBirthday
 
 The payday keyword is neccesary for a payday as  all other items are treated as bills.
 (It doesn't matter what you put after Payday as long as you dont' have two items named exactly the same thing.)
@@ -27,6 +28,10 @@ amount=150
 [Payday2]
 due=2
 amount=140
+
+[PaydayBirthday]
+due=14
+amount=6000
 ```
 
 
