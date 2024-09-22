@@ -10,7 +10,7 @@
 Create a .toml file that houses all of your bills and paydays with their due dates and amounts.
 - Electricty
 - Payday1
- -Payday2
+- Payday2
 - PaydayBirthday
 
 The payday keyword is neccesary for a payday as  all other items are treated as bills.
