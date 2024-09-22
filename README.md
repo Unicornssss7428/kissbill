@@ -37,7 +37,9 @@ amount=6000
 
 # Why I started this project
 I started this project because I grew tired of doing different calculations related to my finances by hand. I didn't want to use a personal finance manager as it seemed a bit overkill for my use case. The original plan for the project was just a small script to calculate
-how long it would take for me to save up for an emergency fund then it grew from there.
+how long it would take for me to save up for an emergency fund then it grew from there. 
+
+A secondary reason that I started this project is because I have a lot of trouble doing math related to my finances and often make impuslive buying decisions. I wanted a way that I could easily see the consequences of my actions without much effort. Hopefully when I get my formal ADHD diagnosis and medications this will be less of an issue. With that being said I hope that this tool helps everybody and if you have ADHD I hope you find some use for it as well :))
 
 # Where this project may go
 The overall goal of this project is to be both a useful module for any finance applications you may want to develop and a stand-alone application. 
