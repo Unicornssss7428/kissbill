@@ -1,9 +1,11 @@
 <p align='center'>
   <img src=https://github.com/Unicornssss7428/kissbill/blob/main/images/kiss_bill.png title='Kissbill Logo' width='200' height='200'>
 </p>
-Kissbill is a bills tracking/budgeting app that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.
+<h3 align='center'>Kissbill</h3>
+<p align='center'>Kissbill is a bills tracking/budgeting app that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.</p>
 
-#Usage:
+
+# Usage:
 
 Create a .toml file that houses all of your bills and paydays with their due dates and amounts.
 Payday1
