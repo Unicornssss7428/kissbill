@@ -22,12 +22,14 @@ def parse_bills(bills_dict):
             bill = MoneyEvent(int(bills_dict[item]['due']), int( bills_dict[item]['amount']), "payday")
             bills.append(bill)
     return bills
+
 def total_bills(parsed_bills):
     total_bills = 0
     for event in parsed_bills:
         if event.e_type == "bill":
             total_bills += event.amount
     return total_bills    
+
 def bill_calendar(parsed_bills, start_money, starting_from = 0):
     # Bills.toml should be sorted.
     money = int(start_money)
@@ -61,6 +63,7 @@ def save_for_emergency_fun(parsed_bills,  can_save, months=6):
     emergency_total = emergency_fund(parsed_bills, months)*months
     print(emergency_total)
     print(int(emergency_total/can_save))
+
 def monthly_pay(parsed_bills):
     pay = 0
     for event in parsed_bills:
