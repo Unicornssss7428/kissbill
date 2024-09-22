@@ -2,7 +2,7 @@
   <img src=https://github.com/Unicornssss7428/kissbill/blob/main/images/kiss_bill.png title='Kissbill Logo' width='300' height='300'>
 </p>
 <h2 align='center'>Kissbill</h2>
-<p align='center'>Kissbill is a bills tracking/budgeting app that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.</p>
+<p align='center'>Kissbill is a bills tracking/budgeting app written in Python that aims to be as simple to use as possible! All you need to do is tell it when your bills are due and how much they cost you, then it'll do the rest.</p>
 
 
 # Usage:
@@ -51,4 +51,5 @@ I don't expect to ever make this into a full-fledged budgeting application that 
 - Ability to calculate how much money I need to save per day/week/month/year to reach a certain goal, i.e. emergency fund.
 - Ability to display a calendar that shows me how much working cash (how much cash I can spend on that day and still meet goals/pay for expenses.) I have each day.
 - Ability to calculate how much a certain financial decision affects your ability to save for goals/pay for expenses.
+- Eventual port/overhaul to Rust
 
