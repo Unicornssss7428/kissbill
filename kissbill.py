@@ -11,6 +11,10 @@ class Fund:
         self.duration = duration
         self.balance = balance*6
 
+# Displays a balance for each day.
+class MoneyCalendar:
+    pass
+
 def total_funds(funds):
     total_funds = 0
     for fund in funds:
@@ -61,13 +65,7 @@ def total_can_save(parsed_bills):
     bills_total = total_bills(parsed_bills)
     pay_total = total_pay(parsed_bills)
     return pay_total - bills_total
-
-  # How much can I spend each day/week/month and still pay for expenses/save for emergency fund, car, etc.
-def total_spending_power(parsed_bills, funds, option='m'):                                      
-    bills_total = total_bills(parsed_bills)
-    funds_total = total_funds(funds)
-    total_expenses = bills_total + funds_total
-    
+        
 # Calculate how much a certain financial decision on a certain date (due) effects ability to pay for expenses and save for funds.
 def if_spend(parsed_bills, funds, due):
     pass
