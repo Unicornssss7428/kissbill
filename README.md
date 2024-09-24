@@ -46,6 +46,7 @@ The overall goal of this project is to be both a useful module for any finance a
 I don't expect to ever make this into a full-fledged budgeting application that connects with your bank account and helps you manage your finances. At the moment the following features are planned/implemented:
 
 - CLI
+- Self-Hosted API so you can query your kissbill while at the store (i.e. POST IP ifispend endpoint). This will be useful for me as I can say "Hey if I buy this new $60000 GPU, how it will affect my goals?"
 - GUI
 - Ability to calculate how much I can save per day/week/month/year and still pay for expenses.
 - Ability to calculate how much money I need to save per day/week/month/year to reach a certain goal, i.e. emergency fund.
@@ -54,4 +55,3 @@ I don't expect to ever make this into a full-fledged budgeting application that 
 - Ability to calculate total bills for day/week/month/year.
 - Ability to calculate total pay for day/week/month/year.
 - Eventual port/overhaul to Rust
-
